@@ -86,7 +86,8 @@ def create_decision_tree(data, attributes, target_attr, fitness_func):
                 target_attr,
                 fitness_func)
 
-            # Add the new subtree to the empty dictionary object in our new
+            # 将子树添加到树的相应位置
+            # Add the new subtree to the empty dictionary object in our new 
             # tree/node we just created.
             tree[best][val] = subtree
 
@@ -143,8 +144,6 @@ def unique(lst):
 
 def get_values(data, attr):
     """
-    创建
-    Creates a list of values in the chosen attribut for each record in data,
     剪去重复数值,返回列表
     """
     data = data[:]

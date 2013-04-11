@@ -11,7 +11,8 @@ python -u run.py train.dat test.dat
 
 数据格式
 
-函数: create_decision_tree(examples, attributes, target_attribute, heuristic_funtion) 接受如下输入:
+create_decision_tree(examples, attributes, target_attribute, heuristic_funtion) 
+接受如下输入:
 
 examples (训练or测试数据集) : list of dicts (python字典)
 attributes : list
