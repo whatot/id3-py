@@ -86,53 +86,41 @@ def run_app(fTrainIn, fTestIn):
     """
     Runs the algorithm on the data
     """
+
     linesInTest = [line.strip() for line in fTestIn.readlines()]
     attributes = linesInTest[0].split(" ")
-    targetAttribute = "isresolved"
+
     #反转后，利用list.pop()去除最后一行，再反转回到原次序
     linesInTest.reverse()
     linesInTest.pop() #pop()弹出并返回最后一行
     linesInTest.reverse()
 
     attrList, attrDict = prepare_attributes(attributes)
-    attrList.append(targetAttribute)
-    #print attrList
-    #['AreaName', 'VSAT', 'SupportVSAT', 'TimeToClose', 'ProductVSAT', 'isresolved']
-    attrDict[targetAttribute] = 2 # since its a binary classification
-    #print attrDict
-    #{'ProductVSAT': '2', 'VSAT': '2', 'isresolved': 2, 'SupportVSAT': '2', 'AreaName': '2', 'TimeToClose': '2'}
+    targetAttribute = attrList[-1]
 
-    # prepare data
+    # prepare testdata
     testData = []
     for line in linesInTest:
         testData.append(dict(zip(attrList,[datum.strip() for datum in line.split("\t")])))
 
-    #print testData
-    #存放dicts的list
-    #[......,{'ProductVSAT': '1', 'VSAT': '1', 'isresolved': '1', 'SupportVSAT': '0', 'AreaName': 'United_States', 'TimeToClose': '3'}]
+
 
     linesInTrain = [lineTrain.strip() for lineTrain in fTrainIn.readlines()]
     attributesTrain = linesInTrain[0].replace("\t"," ").split(" ")
-    #print attributesTrain
-    targetAttributeTrain = "isresolved"
+
     #once we have the attributes remove it from lines
     linesInTrain.reverse()
     linesInTrain.pop() # pops from end of list, hence the two reverses
     linesInTrain.reverse()
 
     attrListTrain, attrDictTrain = prepare_attributes(attributesTrain)
-    attrListTrain.append(targetAttributeTrain)
-    #print attrListTrain
-    #['AreaName', 'VSAT', 'SupportVSAT', 'TimeToClose', 'ProductVSAT', 'isresolved']
-    attrDictTrain[targetAttributeTrain] = 2 # since its a binary classification
+    targetAttributeTrain = attrListTrain[-1]
 
     # prepare data
     trainData = []
     for lineTrain in linesInTrain:
         trainData.append(dict(zip(attrListTrain,[datum.strip() for datum in lineTrain.split("\t")])))
 
-    #print trainData
-    #[....{}, {}, {'ProductVSAT': '1', 'VSAT': '0', 'isresolved': '1', 'SupportVSAT': '1', 'AreaName': 'United_States', 'TimeToClose': '4'}]
 
 
     trainingTree = create_decision_tree(trainData, attrListTrain, targetAttributeTrain, gain)
@@ -167,6 +155,7 @@ def accuracy(algoclassification, targetClassification):
 def print_tree(tree, str):
     """
     打印树
+    print the tree
     """
 
     if type(tree)== dict:
