@@ -4,13 +4,13 @@ id3 decision tree using python
 
 调用ID3算法的主函数是run.py中的 run_app。
 
-##运行(暂时只支持python2.7)
+###运行(暂时只支持python2.7)
 `python run.py train.dat test.dat`
 或者使用ori数据集
 `python run.py train-ori.dat test-ori.dat`
 
 
-##数据格式
+###数据格式
 
 `create_decision_tree(examples, attributes, target_attribute, heuristic_funtion)`
 接受如下输入:
