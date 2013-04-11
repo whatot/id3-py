@@ -1,0 +1,191 @@
+TimeToClose = 1  : 
+|   SupportVSAT = 1  : 
+|     AreaName = Canada  : 
+|        : 1
+    AreaName = United_States  : 
+|       VSAT = 1  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+      VSAT = 0  : 
+|         ProductVSAT = 1  : 
+|            : 0
+        ProductVSAT = 0  : 
+|            : 1
+    AreaName = India  : 
+|        : 1
+  SupportVSAT = 0  : 
+|     ProductVSAT = 1  : 
+|       AreaName = Canada  : 
+|          : 0
+      AreaName = United_States  : 
+|         VSAT = 0  : 
+|            : 0
+      AreaName = India  : 
+|          : 0
+    ProductVSAT = 0  : 
+|       AreaName = Canada  : 
+|         VSAT = 0  : 
+|            : 1
+      AreaName = United_States  : 
+|         VSAT = 1  : 
+|            : 0
+        VSAT = 0  : 
+|            : 0
+      AreaName = India  : 
+|         VSAT = 0  : 
+|            : 0
+      AreaName = APAC  : 
+|          : 0
+TimeToClose = 3  : 
+|   VSAT = 1  : 
+|     AreaName = Canada  : 
+|       ProductVSAT = 1  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 0
+      ProductVSAT = 0  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 1
+    AreaName = United_States  : 
+|       SupportVSAT = 1  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+      SupportVSAT = 0  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+    AreaName = India  : 
+|       ProductVSAT = 1  : 
+|          : 1
+      ProductVSAT = 0  : 
+|         SupportVSAT = 1  : 
+|            : 1
+    AreaName = UK  : 
+|        : 1
+  VSAT = 0  : 
+|     AreaName = Canada  : 
+|       ProductVSAT = 1  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 1
+      ProductVSAT = 0  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 0
+    AreaName = Japan  : 
+|        : 1
+    AreaName = United_States  : 
+|       SupportVSAT = 1  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+      SupportVSAT = 0  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+    AreaName = India  : 
+|       ProductVSAT = 1  : 
+|          : 1
+      ProductVSAT = 0  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 0
+TimeToClose = -1  : 
+|   VSAT = 1  : 
+|     AreaName = Canada  : 
+|        : 1
+    AreaName = United_States  : 
+|       SupportVSAT = 1  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+      SupportVSAT = 0  : 
+|         ProductVSAT = 1  : 
+|            : 0
+  VSAT = 0  : 
+|     ProductVSAT = 1  : 
+|       SupportVSAT = 1  : 
+|          : 0
+      SupportVSAT = 0  : 
+|         AreaName = Canada  : 
+|            : 0
+        AreaName = United_States  : 
+|            : 0
+    ProductVSAT = 0  : 
+|        : 0
+TimeToClose = 4  : 
+|   VSAT = 1  : 
+|     AreaName = Canada  : 
+|       SupportVSAT = 1  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+      SupportVSAT = 0  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 0
+    AreaName = MEA  : 
+|        : 1
+    AreaName = United_States  : 
+|       ProductVSAT = 1  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 1
+      ProductVSAT = 0  : 
+|         SupportVSAT = 1  : 
+|            : 1
+        SupportVSAT = 0  : 
+|            : 1
+    AreaName = India  : 
+|        : 1
+    AreaName = France  : 
+|        : 1
+    AreaName = Germany  : 
+|        : 1
+    AreaName = UK  : 
+|        : 1
+    AreaName = Western Europe  : 
+|        : 1
+    AreaName = APAC  : 
+|        : 1
+  VSAT = 0  : 
+|     AreaName = Canada  : 
+|       ProductVSAT = 1  : 
+|          : 1
+      ProductVSAT = 0  : 
+|         SupportVSAT = 1  : 
+|            : 0
+        SupportVSAT = 0  : 
+|            : 1
+    AreaName = United_States  : 
+|       SupportVSAT = 1  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+      SupportVSAT = 0  : 
+|         ProductVSAT = 1  : 
+|            : 1
+        ProductVSAT = 0  : 
+|            : 1
+    AreaName = India  : 
+|        : 0
+ Accuracy of training set (1401 instances) :  86.4382583869
+ Accuracy of test set (99 instances) :  87.8787878788
