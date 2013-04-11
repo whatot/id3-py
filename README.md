@@ -22,8 +22,7 @@ id3 decision tree using python
 
 ##NOTE:数据集文件最后一列为最终决定属性
 
-1. 数据集第一行为空格分行，并以2跟随在每个属性之后
+1. 数据集第一行为空格分行，并以2跟随在每个属性之后..
 `attr1 2 attr2 2 attr3 2 attr4 2 attr5 2 attr6 2 class 2`
-
-2. 数据集数据部分全为tab(\t)分离
+2. 数据集数据部分全为tab(\t)分离  
 `1	1	0	0	0	0	0`
