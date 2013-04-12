@@ -62,7 +62,7 @@ def create_decision_tree(data, attributes, target_attr, fitness_func):
     #vals是最终属性所有值的list
     default = majority_value(data, target_attr)
 
-    # 如果数据集为空，或出去最终属性外的属性list为空，返回default
+    # 如果数据集为空，或除去最终属性外的属性list为空，返回default
     if not data or (len(attributes) - 1) <= 0:
         return default
     #如果数据集中全部记录拥有相同的值,返回此值
