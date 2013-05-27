@@ -6,10 +6,12 @@ fork from https://github.com/arunaugustine/ID3
 
 调用ID3算法的主函数是run.py中的 run_app。
 
-###运行(暂时只支持python2.7)  
-`python run.py train.dat test.dat`  
-或者使用ori数据集  
-`python run.py train-ori.dat test-ori.dat`
+###运行(支持python2.7, 3.x)
+``python2 run.py train.dat test.dat``
+``python3 run.py train.dat test.dat``
+或者使用ori数据集
+``python2 run.py train-ori.dat test-ori.dat``
+``python3 run.py train-ori.dat test-ori.dat``
 
 
 ###数据格式  
