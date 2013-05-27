@@ -2,7 +2,11 @@
 
 id3 decision tree using python
 
-fork from https://github.com/arunaugustine/ID3
+Fork from https://github.com/arunaugustine/ID3
+
+Maintain in
+* http://git.oschina.net/whatot/id3-py
+* https://github.com/whatot/id3-py
 
 调用ID3算法的主函数是run.py中的 run_app。
 
