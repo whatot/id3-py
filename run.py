@@ -173,9 +173,11 @@ def print_tree(tree, str):
         # print("%s%s = " % (str, list(tree.keys())[0]))
         for item in list(list(tree.values())[0].keys()):
             print("  |  %s%s = %s" % (str, list(tree.keys())[0], item))
-            print_tree(list(tree.values())[0][item], str + "  ")
+            print_tree(list(tree.values())[0][item], str + "   ")
+            # the space in 'str + "   "' affect Backspace between Sub-layer
     else:
-        print("  |  %s : %s" % (str, tree))
+        print("   -->  %s : %s" % (str, tree))
+        # --> stand for the targetAttribute
 
 if __name__ == "__main__":
 
